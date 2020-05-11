@@ -1,0 +1,12 @@
+
+# TestLCD
+TestLCD/TestLCD.X/debug
+TestLCD/TestLCD.X/build
+TestLCD/TestLCD.X/dist
+TestLCD/TestLCD.X/nbproject/private
+TestLCD/TestLCD.X/nbproject/Makefile-*
+TestLCD/TestLCD.X/nbproject/Package-*
+*.workspace
+*.pdsbak
+
+
