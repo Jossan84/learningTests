@@ -259,6 +259,14 @@
           <property key="stack-type" value="compiled"/>
         </XC8-config-global>
       </item>
+      <item path="src/LCD_LM016L_4bits.c" ex="false" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
       <item path="src/LCD_LM016L_8bits.c" ex="true" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>

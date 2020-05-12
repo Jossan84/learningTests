@@ -1,5 +1,5 @@
 #include <xc.h> 
-#include "<LCD_LM016L_pic16f84a.h>"
+#include <LCD_LM016L_pic16f84a.h>
 
 #define _XTAL_FREQ	4000000      	// 4 MHz
 
@@ -94,8 +94,8 @@ void gotoXYLCD(unsigned char row,unsigned char col)
 	if (col > 16)
 		col = 0;
 	if (row == 2)
-		writeCommandToLCD(0xC0 + col);
+		writeCommandToLCD((unsigned char)(0xC0 + col));
 	else
-		writeCommandToLCD(0x80 + col);
+		writeCommandToLCD((unsigned char)(0x80 + col));
 }	
 

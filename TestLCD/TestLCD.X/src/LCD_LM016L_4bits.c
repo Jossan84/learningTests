@@ -74,13 +74,13 @@ void writeCommandToLCD(unsigned char command)
 {
 	LCD_RS = 0;						// Command
 		
-	DATA &= 0xF0;					// Data = 0
-	DATA |= ((command>>4)&0x0F);	// Send to the port 4 MSB of the data
-	toggleEpinOfLCD();				// Pulse on terminal E
+	DATA &= 0xF0;                                 // Data = 0
+	DATA |= ((unsigned char)((command>>4)&0x0F)); // Send to the port 4 MSB of the data
+	toggleEpinOfLCD();                            // Pulse on terminal E
 
-	DATA &= 0xF0;					// Data = 0
-	DATA |= (command&0x0F);			// Send to the port 4 LSB of the data
-	toggleEpinOfLCD();				// Pulse on terminal E
+	DATA &= 0xF0;                            // Data = 0
+	DATA |= ((unsigned char)(command&0x0F)); // Send to the port 4 LSB of the data
+	toggleEpinOfLCD();				         // Pulse on terminal E
 
 }
 
@@ -89,13 +89,13 @@ void writeCharToLCD(char LCDChar)
 {
 	LCD_RS = 1;						// Data
 	
-	DATA &= 0xF0;					// Data = 0
-	DATA |= ((LCDChar>>4)&0x0F);	// Send to the port 4 MSB of the data
-	toggleEpinOfLCD();				// Pulse on terminal E
+	DATA &= 0xF0;                                 // Data = 0
+	DATA |= ((unsigned char)((LCDChar>>4)&0x0F)); // Send to the port 4 MSB of the data
+	toggleEpinOfLCD();                            // Pulse on terminal E
 
-	DATA &= 0xF0;					// Data = 0
-	DATA |= (LCDChar&0x0F);			// Send to the port 4 LSB of the data
-	toggleEpinOfLCD();				// Pulse on terminal E
+	DATA &= 0xF0;                            // Data = 0
+	DATA |= ((unsigned char)(LCDChar&0x0F)); // Send to the port 4 LSB of the data
+	toggleEpinOfLCD();                       // Pulse on terminal E
 
 }
 
@@ -124,9 +124,9 @@ void gotoXYLCD(unsigned char row,unsigned char col)
 	if (col > 16)
 		col = 0;
 	if (row == 2)
-		writeCommandToLCD(0xC0 + col);
+		writeCommandToLCD((unsigned char)(0xC0 + col));
 	else 
-		writeCommandToLCD(0x80 + col);
+		writeCommandToLCD((unsigned char)(0x80 + col));
 }	
 
 

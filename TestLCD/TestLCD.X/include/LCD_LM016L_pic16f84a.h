@@ -5,6 +5,9 @@
  * This header file provides an abstraction of reading and
  * writing the pins that command the LCD display
  *
+ * Note: Uncomment and comment the hardware configuration to choose the LCD
+ *       bit configuration mode.
+ * 
  * @author José Manuel
  * @date April 5 2020
  *
@@ -12,7 +15,10 @@
 #ifndef __LCD_LM016L_PIC16F84A_H__
 #define __LCD_LM016L_PIC16F84A_H__
 
+/************ Hardware configuration for LCD in 4 bits mode **************/
+
 /* Define the control terminals */
+
 #define LCD_E    			RB5			// Control for terminal E of the LCD
 #define LCD_RS  			RB4   		// Control for terminal RS of the LCD
 #define	DATA				PORTB		// Port for data bus
@@ -22,12 +28,46 @@
 #define LCD_Data_Bus_D7		RB3			// Bit 7 of the data bus
 
 /* Define the configuration registers used to control the LCD */
+
 #define LCD_E_Dir      		  TRISB5	// E
 #define LCD_RS_Dir     		  TRISB4	// RS
 #define LCD_Data_Bus_Dir_D4   TRISB0	// D4
 #define LCD_Data_Bus_Dir_D5   TRISB1	// D5
 #define LCD_Data_Bus_Dir_D6   TRISB2	// D6
 #define LCD_Data_Bus_Dir_D7   TRISB3	// D7
+
+/*************************************************************************/
+
+/************ Hardware configuration for LCD in 8 bits mode **************/
+
+/* Define the control terminals */
+/*
+#define LCD_E    			RA0			// Control for terminal E of the LCD
+#define LCD_RS  			RA1   		// Control for terminal RS of the LCD
+#define	DATA				PORTB		// Port for data bus
+#define LCD_Data_Bus_D0		RB0			// Bit 0 of the data bus
+#define LCD_Data_Bus_D1		RB1			// Bit 1 of the data bus
+#define LCD_Data_Bus_D2		RB2			// Bit 2 of the data bus
+#define LCD_Data_Bus_D3		RB3			// Bit 3 of the data bus
+#define LCD_Data_Bus_D4		RB4			// Bit 4 of the data bus
+#define LCD_Data_Bus_D5		RB5			// Bit 5 of the data bus
+#define LCD_Data_Bus_D6		RB6			// Bit 6 of the data bus
+#define LCD_Data_Bus_D7		RB7			// Bit 7 of the data bus
+*/
+/* Define the configuration registers used to control the LCD */
+/*
+#define LCD_E_Dir      		  TRISA0	// E
+#define LCD_RS_Dir     		  TRISA1	// RS
+#define LCD_Data_Bus_Dir_D0   TRISB0	// D0
+#define LCD_Data_Bus_Dir_D1   TRISB1	// D1
+#define LCD_Data_Bus_Dir_D2   TRISB2	// D2
+#define LCD_Data_Bus_Dir_D3   TRISB3	// D3
+#define LCD_Data_Bus_Dir_D4   TRISB4	// D4
+#define LCD_Data_Bus_Dir_D5   TRISB5	// D5
+#define LCD_Data_Bus_Dir_D6   TRISB6	// D6
+#define LCD_Data_Bus_Dir_D7   TRISB7	// D7
+*/
+/*************************************************************************/
 
 
 /* Auxiliar constants */
