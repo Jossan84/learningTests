@@ -1,5 +1,5 @@
 #include <xc.h> 
-#include "<LCD_pic16f84a.h>"
+#include "<LCD_LM016L_pic16f84a.h>"
 
 #define _XTAL_FREQ	4000000      	// 4 MHz
 

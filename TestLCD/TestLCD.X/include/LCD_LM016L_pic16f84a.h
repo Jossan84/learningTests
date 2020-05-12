@@ -1,5 +1,5 @@
 /**
- * @file LCD_pic16f84a.h
+ * @file LCD_LM016L_pic16f84a.h
  * @brief Abstraction of pins to command the LCD display
  *
  * This header file provides an abstraction of reading and
@@ -9,8 +9,8 @@
  * @date April 5 2020
  *
  */
-#ifndef __LCD_PIC16F84A_H__
-#define __LCD_PIC16F84A_H__
+#ifndef __LCD_LM016L_PIC16F84A_H__
+#define __LCD_LM016L_PIC16F84A_H__
 
 /* Define the control terminals */
 #define LCD_E    			RB5			// Control for terminal E of the LCD
@@ -113,4 +113,4 @@ void clearLCDScreen(void);
  */
 void gotoXYLCD(unsigned char, unsigned char);
 
-#endif /* __LCD_PIC16F84A_H__ */
+#endif /* __LCD_LM016L_PIC16F84A_H__ */
