@@ -1,5 +1,5 @@
 
-## Template for Support and Use Documentation of Digital Tools
+## Documentation
 
 ### [Unit Tests]
 ### Description and Context
