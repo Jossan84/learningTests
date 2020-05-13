@@ -1,5 +1,5 @@
 #include <xc.h>
-#include <LCD_LM016L_pic16f84a.h>
+#include <LCD_NHD_0216BZ_FL_pic16f84a.h>
 #include <stdlib.h>
 
 /* PIC 16F84A Configuration with  XC8 Compiler */
@@ -8,9 +8,15 @@
 
 void main(void)
 {
+    /* Init LCD*/
 	initLCD();
-	clearLCDScreen(); 
+	clearLCDScreen();
+    
+    /* Led ON */
+    TRISB = 0;
+    RB7 = 1;
 	
+    /* Application */
 	do{
 		
 		unsigned char i;	
