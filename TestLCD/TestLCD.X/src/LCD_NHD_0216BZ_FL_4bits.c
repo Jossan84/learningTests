@@ -9,7 +9,6 @@ void toggleEpinOfLCD(void)
 	LCD_E = 1;						
     __delay_us(E_Delay);
 	LCD_E = 0;						
-    //__delay_us(E_Delay);
 }
 
 /* initLCD */
