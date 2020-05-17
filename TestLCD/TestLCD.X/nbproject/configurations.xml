@@ -6,6 +6,7 @@
                    projectFiles="true">
       <itemPath>include/LCD_LM016L_pic16f84a.h</itemPath>
       <itemPath>include/LCD_NHD_0216BZ_FL_pic16f84a.h</itemPath>
+      <itemPath>include/LCD_EasyPICv7.h</itemPath>
     </logicalFolder>
     <logicalFolder name="LinkerScript"
                    displayName="Linker Files"
@@ -19,6 +20,7 @@
       <itemPath>src/LCD_LM016L_8bits.c</itemPath>
       <itemPath>src/LCD_NHD_0216BZ_FL_4bits.c</itemPath>
       <itemPath>src/LCD_NHD_0216BZ_FL_8bits .c</itemPath>
+      <itemPath>src/LCD_1602_EasyPICv7_4bits.c</itemPath>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
                    displayName="Important Files"
@@ -262,6 +264,14 @@
           <property key="stack-type" value="compiled"/>
         </XC8-config-global>
       </item>
+      <item path="include/LCD_NHD_0216BZ_FL_pic16f84a.h" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
       <item path="src/LCD_LM016L_4bits.c" ex="true" overriding="false">
         <HI-TECH-COMP>
         </HI-TECH-COMP>
@@ -278,7 +288,21 @@
         <XC8-config-global>
         </XC8-config-global>
       </item>
+      <item path="src/LCD_NHD_0216BZ_FL_4bits.c" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-config-global>
+        </XC8-config-global>
+      </item>
       <item path="src/LCD_NHD_0216BZ_FL_8bits .c" ex="true" overriding="false">
+        <HI-TECH-COMP>
+        </HI-TECH-COMP>
+        <HI-TECH-LINK>
+        </HI-TECH-LINK>
+        <XC8-config-global>
+        </XC8-config-global>
       </item>
     </conf>
   </confs>

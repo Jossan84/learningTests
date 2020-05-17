@@ -1,6 +1,6 @@
 #include <xc.h>
-#include <LCD_NHD_0216BZ_FL_pic16f84a.h>
 #include <stdlib.h>
+#include <LCD_EasyPICv7.h>
 
 /* PIC 16F84A Configuration with  XC8 Compiler */
 #pragma config FOSC=XT, WDTE=OFF, PWRTE=OFF, CP=OFF
@@ -11,11 +11,12 @@ void main(void)
     /* Init LCD*/
 	initLCD();
 	clearLCDScreen();
+    writeStringToLCD("Test LCD");
     
     /* Led ON */
-    TRISB = 0;
-    RB7 = 1;
-	
+    //TRISB = 0;
+    //RB0 =0;
+
     /* Application */
 	do{
 		
@@ -34,7 +35,7 @@ void main(void)
 			__delay_ms(500);					
 		}		
 		clearLCDScreen();  
-        
+       
 	}while(1);	
 }
 
