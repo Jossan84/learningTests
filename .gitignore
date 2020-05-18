@@ -6,6 +6,16 @@ TestLCD/TestLCD.X/dist
 TestLCD/TestLCD.X/nbproject/private
 TestLCD/TestLCD.X/nbproject/Makefile-*
 TestLCD/TestLCD.X/nbproject/Package-*
+
+# Test7Seg
+Test7Seg/Test7Seg.X/debug
+Test7Seg/Test7Seg.X/build
+Test7Seg/Test7Seg.X/dist
+Test7Seg/Test7Seg.X/nbproject/private
+Test7Seg/Test7Seg.X/nbproject/Makefile-*
+Test7Seg/Test7Seg.X/nbproject/Package-*
+
+
 *.workspace
 *.pdsbak
 
