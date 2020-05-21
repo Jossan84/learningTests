@@ -37,22 +37,22 @@ void displayNumber(unsigned char units,unsigned char tens,unsigned char hundreds
           
     RA3=1;
     PORTD=T7SEG[units];
-    __delay_ms(60);
+    __delay_ms(2);
     RA3=0;
   
     RA2=1;
     PORTD=T7SEG[tens];
-    __delay_ms(60);
+    __delay_ms(2);
     RA2=0;
     
     RA1=1;
     PORTD=T7SEG[hundreds];
-    __delay_ms(60);
+    __delay_ms(2);
     RA1=0;
 
     RA0=1;
     PORTD=T7SEG[thousands];
-    __delay_ms(60);
+    __delay_ms(2);
     RA0=0; 
 }
 
