@@ -9,6 +9,8 @@
 
 void main(void)
 {   
+    
+    ANSEL = 0;
     TRISD = 0;
     TRISA = 0;
     TRISB = 0;

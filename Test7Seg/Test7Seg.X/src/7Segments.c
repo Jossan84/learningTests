@@ -30,41 +30,19 @@ unsigned char extractDigits(unsigned int num, unsigned char *digits){
 };
 
 /* displayNumber */
-void displayString(unsigned char *string, unsigned char size){
-    
+void displayString(unsigned char *string, unsigned char size){    
 //This function delays 8ms
+    ANSEL = 0;
     TRISD = 0;
     TRISA = 0;
-    /*  
+    PORTA = 0x01;
+      
     unsigned char i;
     
-    for (i=0; i<size; i++){ 
-    // TO DO DEBUGG PROBLEM WITH PORTA    
-        PORTA = i+1;
-        PORTD = decode7Seg(string[i+size-1]);  
+    for (i=0; i<size; i++){      
+        PORTD = decode7Seg(string[(size-1) - i]);
         __delay_ms(2);
-        PORTA = 0;
+        //PORTD = 0x00; //Prevent to put data in the incorrect display.
+        PORTA <<= 1;
     }
-    */
-    
-    RA0=1;
-    PORTD = decode7Seg(string[3]);        
-    __delay_ms(2);
-    RA0=0;
-  
-    RA1=1;
-    PORTD = decode7Seg(string[2]);  
-    __delay_ms(2);
-    RA1=0;
-    
-    RA2=1;
-    PORTD = decode7Seg(string[1]);  
-    __delay_ms(2);
-    RA2=0;
-
-    RA3=1;
-    PORTD = decode7Seg(string[0]);  
-    __delay_ms(2);
-    RA3=0; 
-    
 }
