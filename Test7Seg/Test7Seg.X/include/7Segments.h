@@ -20,6 +20,7 @@
 const unsigned char T7SEG[10] = {0x3F,0x06,0x5B,0x4F,0x66,0x6d,0x7C,0x07,0x7F,0x6F};
 
 #define dot RD7
+#define N 4  // Number of 7 segments displays
 
 const unsigned char DECODE_COMMON_ANODE[75]= {
 /*  0     1     2     3     4     5     6     7     8     9     :     ;     */
@@ -70,6 +71,18 @@ const unsigned char DECODE_COMMON_CATHODE[75]= {
 unsigned char decode7Seg(unsigned char chr);
 
 /**
+ * @brief Display string
+ *
+ * This function display a string in a N seven segments display.
+ * 
+ * @param *string - Text to display
+ * @param size - Size of the string
+ * 
+ * @return void
+ */
+void displayString(unsigned char *string, unsigned char size);
+
+/**
  * @brief Extract the digits of a number
  *
  * This function extract the digits of a unsigned integer, this must 
@@ -83,32 +96,6 @@ unsigned char decode7Seg(unsigned char chr);
  * @return error code
  */
 unsigned char extractDigits(unsigned int num, unsigned char *digits);
-
-/**
- * @brief Display number
- *
- * This function display a number in a 4 seven segments display.
- * 
- * @param units
- * @param tens
- * @param hundreds
- * @param thousands
- * 
- * @return void
- */
-void displayNumber(unsigned char units,unsigned char tens,unsigned char hundreds, unsigned char thousands);
-
-/**
- * @brief Display number
- *
- * This function display a error message in a seven segments display.
- *
- * @param void
- * 
- * @return void
- */
-void displayError(void);
-
 
 
 #endif /* __7_SEGMENTS_H__ */

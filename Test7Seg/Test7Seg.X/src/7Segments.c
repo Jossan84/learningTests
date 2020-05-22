@@ -30,55 +30,41 @@ unsigned char extractDigits(unsigned int num, unsigned char *digits){
 };
 
 /* displayNumber */
-void displayNumber(unsigned char units,unsigned char tens,unsigned char hundreds, unsigned char thousands){		
-//This function delays 200ms
+void displayString(unsigned char *string, unsigned char size){
+    
+//This function delays 8ms
     TRISD = 0;
     TRISA = 0;
-          
-    RA3=1;
-    PORTD=T7SEG[units];
-    __delay_ms(2);
-    RA3=0;
-  
-    RA2=1;
-    PORTD=T7SEG[tens];
-    __delay_ms(2);
-    RA2=0;
+    /*  
+    unsigned char i;
     
-    RA1=1;
-    PORTD=T7SEG[hundreds];
-    __delay_ms(2);
-    RA1=0;
-
-    RA0=1;
-    PORTD=T7SEG[thousands];
-    __delay_ms(2);
-    RA0=0; 
-}
-
-/* displayError */
-void displayError(void){		
-//This function delays 200ms
-    TRISD = 0;
-    TRISA = 0;
-          
-    RA3=1;
-    PORTD=0x79;
-    __delay_ms(60);
-    RA3=0;
-  
-    RA2=1;
-    PORTD=0x79;
-    __delay_ms(60);
-    RA2=0;
+    for (i=0; i<size; i++){ 
+    // TO DO DEBUGG PROBLEM WITH PORTA    
+        PORTA = i+1;
+        PORTD = decode7Seg(string[i+size-1]);  
+        __delay_ms(2);
+        PORTA = 0;
+    }
+    */
     
-    RA1=1;
-    PORTD=0x79;
-    __delay_ms(60);
-    RA1=0;
-
     RA0=1;
-    PORTD=0x79;
-    __delay_ms(60);
+    PORTD = decode7Seg(string[3]);        
+    __delay_ms(2);
     RA0=0;
+  
+    RA1=1;
+    PORTD = decode7Seg(string[2]);  
+    __delay_ms(2);
+    RA1=0;
+    
+    RA2=1;
+    PORTD = decode7Seg(string[1]);  
+    __delay_ms(2);
+    RA2=0;
+
+    RA3=1;
+    PORTD = decode7Seg(string[0]);  
+    __delay_ms(2);
+    RA3=0; 
+    
 }

@@ -13,22 +13,14 @@ void main(void)
     TRISA = 0;
     TRISB = 0;
        
-    unsigned int num = 4861;
-    unsigned char digits[4] = {0,0,0,0};
-        
-            
+    unsigned char string[N] = "0Err";
+                 
     /* Application */
 	do{
 
         /* Display number */
-        if (extractDigits(num, digits))
-            displayNumber(digits[0], digits[1], digits[2], digits[3]);
-        else
-            displayError();
-        
-        
-        
-        
+        displayString(string,N);
+             
 	}while(1);	
 }
 
