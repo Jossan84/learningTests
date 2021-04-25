@@ -16,8 +16,8 @@ You only have to install dependent tools.
 
 #### Dependencies
 
-[Visual Code](https://github.com/unitTests/TestDebugGDBVisualCode)
-[MinGW](https://github.com/unitTests/TestDebugGDBVisualCode)
+[Visual Code](https://code.visualstudio.com/Download)
+[MinGW](http://mingw-w64.org/doku.php)
 
 ### How to Contribute
 ---
