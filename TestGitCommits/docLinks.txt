@@ -1,0 +1,14 @@
+https://dzone.com/articles/automate-git-commands-across-repos-using-batch-scr
+http://steve-jansen.github.io/guides/windows-batch-scripting/index.html
+https://gist.github.com/mnem/1438396
+https://unix.stackexchange.com/questions/272260/how-to-get-first-5-chars-of-a-git-commit-hash-id-and-store-it-in-a-variable-in-b
+https://stackoverflow.com/questions/29876342/how-to-get-only-author-name-or-email-in-git-given-sha1
+https://stackoverflow.com/questions/11657295/count-the-number-of-commits-on-a-git-branch
+https://stackoverflow.com/questions/31520591/bash-git-pre-commit-hook-running-matlab-function-does-not-wait-for-a-result/31520671#31520671
+https://stackoverflow.com/questions/6650215/how-to-keep-the-local-file-or-the-remote-file-during-merge-using-git-and-the-com
+
+****dos2unix / unix2dos*****
+https://www.shellscript.sh/tips/dos2unix/
+
+****Launch scpecific version of matlab**** 
+https://www.mathworks.com/matlabcentral/answers/196275-how-can-i-launch-a-specific-version-of-matlab-from-windows-command-prompt-with-matlab-command

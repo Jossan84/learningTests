@@ -1,0 +1,1 @@
+https://stackoverflow.com/questions/10085184/how-to-get-the-return-value-from-matlab-in-bash-script

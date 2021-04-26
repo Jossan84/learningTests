@@ -1,0 +1,4 @@
+
+https://www.techrepublic.com/article/automate-tasks-with-windows-script-hosts-sendkeys-method/
+https://social.technet.microsoft.com/wiki/contents/articles/5169.vbscript-sendkeys-method.aspx
+http://www.miguelenred.es/ejecutar-un-programa-con-vbscript-vbs/

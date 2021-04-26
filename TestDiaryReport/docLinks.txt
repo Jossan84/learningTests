@@ -1,0 +1,4 @@
+http://matlab.izmiran.ru/help/techdoc/ref/diary.html
+https://es.mathworks.com/help/matlab/ref/diary.html?searchHighlight=diary&s_tid=srchtitle
+https://es.mathworks.com/help/simulink/slref/sldiagviewer.diary.html
+https://undocumentedmatlab.com/articles/couple-of-matlab-bugs-and-workarounds
