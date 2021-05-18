@@ -1,0 +1,5 @@
+https://towardsdatascience.com/free-stock-data-for-python-using-yahoo-finance-api-9dafd96cad2e
+https://algotrading101.com/learn/yahoo-finance-api-guide/
+https://towardsdatascience.com/the-unofficial-yahoo-finance-api-32dcf5d53df
+https://www.quora.com/Why-did-Yahoo-discontinue-its-finance-API
+https://www.mattbutton.com/2019/01/24/how-to-scrape-yahoo-finance-and-extract-fundamental-stock-market-data-using-python-lxml-and-pandas/

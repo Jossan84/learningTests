@@ -1,0 +1,8 @@
+
+  Activo total = Total Assets
+  Patrimonio neto = Total Equity Gross Minority Interest
+  Valor contable fondos propios = Common Stock Equity
+  Deuda Neta = Net Debt
+  Beneficio neto = Net Income from Continuing & Discontinued Operation
+  Beneficio neto antes de impuestos = Net Interest Income
+  Cash Flow = Free Cash Flow
