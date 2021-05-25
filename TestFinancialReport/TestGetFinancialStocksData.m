@@ -16,7 +16,9 @@ stockInfoFile = 'data/stockInfo20210521.xlsx';
 
 financialData = getFinancialStocksData('financialFile', financialFile, 'stockPriceFile', stockPriceFile, 'stockInfoFile', stockInfoFile);
 
-##ratios = getRatios(financialData);
+ratios = getRatios(financialData);
+
+ratiosToExcel(ratios);
 
 rmpath('functions');
 clearvars financialFile stockPriceFile stockInfoFile
