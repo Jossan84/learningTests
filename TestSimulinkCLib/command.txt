@@ -1,0 +1,10 @@
+
+[Method 2 dSPACE]
+
+This example test the way to build a library that include C code from a simulink model. 
+Is described into dSPACE documentation
+
+
+“%PPC_ROOT%\bin\”libppc -a mat.03 user_library.lib
+
+>> Note: Run command from Command Prompt for dSPACE

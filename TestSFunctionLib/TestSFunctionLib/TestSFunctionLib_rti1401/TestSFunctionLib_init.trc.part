@@ -1,0 +1,7 @@
+
+
+
+-- Type definitions for arrays
+typedef TestSFunctionLib_ArrayDT0_2 flt(64,IEEE)[2]
+
+

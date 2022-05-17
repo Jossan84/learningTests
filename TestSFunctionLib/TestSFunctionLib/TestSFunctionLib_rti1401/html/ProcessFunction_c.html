@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript" src="./js/coder_app.js"></script>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<script type="text/javascript" src="./rtwreport_utils.js"></script>
+<script type="text/javascript" src="./rtwannotate.js"></script>
+<link rel="stylesheet" type="text/css" href="./css/coder_app.css"/>
+</head>
+<body onload="srcFileOnload();">
+<pre id="code">
+<table class="code" id="codeTbl">
+<tr name="1" id="1">
+<td>1</td><td><span class="pp">#include "ProcessFunction.h"</span></td></tr>
+<tr name="2" id="2">
+<td>2</td><td><span class="pp">#include "matrix.h"</span></td></tr>
+<tr name="3" id="3">
+<td>3</td><td></td></tr>
+<tr name="4" id="4">
+<td>4</td><td><span class="ct">//void ProcessFunctionInit()</span></td></tr>
+<tr name="5" id="5">
+<td>5</td><td><span class="ct">//{</span></td></tr>
+<tr name="6" id="6">
+<td>6</td><td><span class="ct">//}</span></td></tr>
+<tr name="7" id="7">
+<td>7</td><td></td></tr>
+<tr name="8" id="8">
+<td>8</td><td><span class="ct">/* MAIN FUNCTION */</span></td></tr>
+<tr name="9" id="9">
+<td>9</td><td><span class="kw">void</span> <a id="9c6" class="tk">ProcessFunction</a>(<span class="kw">double</span> <a id="9c29" class="tk">*</a><a id="9c30" class="tk">input1</a>, <span class="kw">double</span> <a id="9c45" class="tk">*</a><a id="9c46" class="tk">input2</a>, <span class="kw">double</span> <a id="9c61" class="tk">*</a><a id="9c62" class="tk">output</a>, <span class="kw">double</span> <a id="9c77" class="tk">*</a><a id="9c78" class="tk">result</a>)</td></tr>
+<tr name="10" id="10">
+<td>10</td><td><span class="br">{</span></td></tr>
+<tr name="11" id="11">
+<td>11</td><td>    <a id="11c5" class="tk">Matrix</a> <a id="11c12" class="tk">matrixInput1</a>, <a id="11c26" class="tk">matrixInput2</a>, <a id="11c40" class="tk">matrixOutput</a>;</td></tr>
+<tr name="12" id="12">
+<td>12</td><td>    <a id="12c5" class="tk">*</a><a id="12c6" class="tk">result</a> = 0;</td></tr>
+<tr name="13" id="13">
+<td>13</td><td>    <span class="ct">//int8t setMatrix(Matrix *a, float64t *data, uint16t nrows, uint16t ncols);</span></td></tr>
+<tr name="14" id="14">
+<td>14</td><td>    <span class="kw">if</span>(0 <a id="14c10" class="tk">!=</a> <a id="14c13" class="tk">setMatrix</a>(<a id="14c23" class="tk">&amp;</a><a id="14c24" class="tk">matrixInput1</a>, <a id="14c38" class="tk">input1</a>, 2, 1))</td></tr>
+<tr name="15" id="15">
+<td>15</td><td>    <span class="br">{</span></td></tr>
+<tr name="16" id="16">
+<td>16</td><td>        <a id="16c9" class="tk">*</a><a id="16c10" class="tk">result</a> = 1;</td></tr>
+<tr name="17" id="17">
+<td>17</td><td>        <span class="kw">return</span>;</td></tr>
+<tr name="18" id="18">
+<td>18</td><td>    <span class="br">}</span></td></tr>
+<tr name="19" id="19">
+<td>19</td><td>    <span class="kw">if</span>(0 <a id="19c10" class="tk">!=</a> <a id="19c13" class="tk">setMatrix</a>(<a id="19c23" class="tk">&amp;</a><a id="19c24" class="tk">matrixInput2</a>, <a id="19c38" class="tk">input2</a>, 2, 1))</td></tr>
+<tr name="20" id="20">
+<td>20</td><td>    <span class="br">{</span></td></tr>
+<tr name="21" id="21">
+<td>21</td><td>        <a id="21c9" class="tk">*</a><a id="21c10" class="tk">result</a> = 1;</td></tr>
+<tr name="22" id="22">
+<td>22</td><td>        <span class="kw">return</span>;</td></tr>
+<tr name="23" id="23">
+<td>23</td><td>    <span class="br">}</span></td></tr>
+<tr name="24" id="24">
+<td>24</td><td>    <span class="kw">if</span>(0 <a id="24c10" class="tk">!=</a> <a id="24c13" class="tk">setMatrix</a>(<a id="24c23" class="tk">&amp;</a><a id="24c24" class="tk">matrixOutput</a>, <a id="24c38" class="tk">output</a>, 2, 1))</td></tr>
+<tr name="25" id="25">
+<td>25</td><td>    <span class="br">{</span></td></tr>
+<tr name="26" id="26">
+<td>26</td><td>        <a id="26c9" class="tk">*</a><a id="26c10" class="tk">result</a> = 1;</td></tr>
+<tr name="27" id="27">
+<td>27</td><td>        <span class="kw">return</span>;</td></tr>
+<tr name="28" id="28">
+<td>28</td><td>    <span class="br">}</span></td></tr>
+<tr name="29" id="29">
+<td>29</td><td>    <span class="ct">//int8t sumMatrix(Matrix const *a, Matrix const *b, Matrix *s);</span></td></tr>
+<tr name="30" id="30">
+<td>30</td><td>    <a id="30c5" class="tk">sumMatrix</a>(<a id="30c15" class="tk">&amp;</a><a id="30c16" class="tk">matrixInput1</a>, <a id="30c30" class="tk">&amp;</a><a id="30c31" class="tk">matrixInput2</a>, <a id="30c45" class="tk">&amp;</a><a id="30c46" class="tk">matrixOutput</a>);</td></tr>
+<tr name="31" id="31">
+<td>31</td><td>	<span class="ct">//output[0] = input1[0] + input2[0];</span></td></tr>
+<tr name="32" id="32">
+<td>32</td><td>    <span class="ct">//output[1] = input1[1] + input2[1];</span></td></tr>
+<tr name="33" id="33">
+<td>33</td><td><span class="br">}</span></td></tr>
+</table>
+</pre>
+</body>
+</html>

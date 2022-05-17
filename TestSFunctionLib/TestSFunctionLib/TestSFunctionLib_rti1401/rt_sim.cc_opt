@@ -1,0 +1,68 @@
+-c -KE
+-nKu
+-nKv
+-nKia
+-p603E
+-o
+rt_sim.o03
+-nQi
+-QmsC0001
+-Qms0111
+-QmsC0177
+-QmsC0186
+-QmsC0188
+-QmsC0191
+-QmsC0193
+-QmeC0223
+-QmeC0233
+-QmsC0236
+-QmsC0237
+-QmwC0260
+-QmsC0340
+-QmsC0381
+-QmsC0514
+-Qms0550
+-QmsC0826
+-Wa,-QmsA0736
+-Qms1430
+-Qms1457
+-Ot
+-Oi
+-Or
+-Ox
+-D_INLINE
+-DSSTATE=RUN
+-DSMODE=RTSIM
+-DUSE_RTMODEL
+-DMODEL=TestSFunctionLib
+-DMT=0
+-DRT
+-DNUMST=1
+-DNCSTATES=0
+-DTID01EQ=0
+-DNO_PRINTF
+-D_DS1401
+-DRTI_BUILD
+-DRTI_ASSERTION_MODE=RTI_ASSERTION_MODE_OFF
+-DRTT_ENABLE
+-J.
+-J..
+"-JC:\dSPACE\dSPACE RCPHIL 2016-B\DS1401\RTPython"
+-J..\SFunction
+-J..\libs/dspace/include
+"-JC:\dSPACE\dSPACE RCPHIL 2016-B\Compiler\PPCTools\INC"
+"-JC:\dSPACE\dSPACE RCPHIL 2016-B\DS1401\RTKernel"
+"-JC:\dSPACE\dSPACE RCPHIL 2016-B\DS1401\RTLib"
+"-JC:\dSPACE\dSPACE RCPHIL 2016-B\MATLAB\RTI\RTI\C"
+"-JC:\dSPACE\dSPACE RCPHIL 2016-B\MATLAB\RTI\RTI\SFcn"
+"-JC:\dSPACE\dSPACE RCPHIL 2016-B\MATLAB\RTI\RTI1401\C"
+"-JC:\dSPACE\dSPACE RCPHIL 2016-B\MATLAB\RTI\RTI1401\SFcn"
+-JC:\MATLAB\R2016a\simulink\include
+-JC:\MATLAB\R2016a\extern\include
+-JC:\MATLAB\R2016a\rtw\c\src
+-JC:\MATLAB\R2016a\rtw\c\src\ext_mode\common
+-JC:\MATLAB\R2016a\simulink\include\sf_runtime
+-JZ:\Workspace\TestSFunctionLib\TestSFunctionLib\TestSFunctionLib_rti1401
+-JZ:\Workspace\TestSFunctionLib\TestSFunctionLib
+-JZ:\Workspace\TestSFunctionLib\TestSFunctionLib\SFunction
+-JZ:\Workspace\TestSFunctionLib\TestSFunctionLib\libs\dspace\lib 

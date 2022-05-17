@@ -1,0 +1,3 @@
+"C:\Program Files\CMake\bin\cmake.exe" -E rm -f CMakeFiles\testCMakeLibraries.dir/objects.a
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\ar.exe cr CMakeFiles\testCMakeLibraries.dir/objects.a @CMakeFiles\testCMakeLibraries.dir\objects1.rsp
+C:\PROGRA~1\MINGW-~1\X86_64~1.0-P\mingw64\bin\gcc.exe -m64 -Wl,--whole-archive CMakeFiles\testCMakeLibraries.dir/objects.a -Wl,--no-whole-archive -o testCMakeLibraries.exe -Wl,--out-implib,libtestCMakeLibraries.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\testCMakeLibraries.dir\linklibs.rsp

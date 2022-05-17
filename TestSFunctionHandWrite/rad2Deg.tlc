@@ -1,0 +1,25 @@
+%% 
+%% File : rad2Deg.tlc
+%% 
+%%
+%% Abstract:
+%%      sfunction rad2Deg block target file
+%% Inlined method:
+%%      Fully Inlined S-Function     
+
+%implements "rad2Deg" "C"
+
+
+%% Function: Outputs ===========================================================
+%%
+%function Outputs(block, system) Output
+  /* From radians to degrees */
+  %assign rollVars = ["U", "Y"]
+  %roll idx = RollRegions, lcv = RollThreshold, block, "Roller", rollVars
+    %<LibBlockOutputSignal(0, "", lcv, idx)> = \
+    %<LibBlockInputSignal(0, "", lcv, idx)> * 57.295779513082323;
+  %endroll
+
+%endfunction
+
+%% [EOF] rad2Deg.tlc

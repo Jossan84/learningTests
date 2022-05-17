@@ -1,0 +1,657 @@
+Model {
+  Name			  "TestSFunctionLib"
+  Version		  8.7
+  MdlSubVersion		  1
+  SavedCharacterEncoding  "windows-1252"
+  GraphicalInterface {
+    NumRootInports	    0
+    NumRootOutports	    0
+    ParameterArgumentNames  ""
+    ComputedModelVersion    "1.51"
+    NumModelReferences	    0
+    NumTestPointedSignals   0
+    NumProvidedFunctions    0
+    NumRequiredFunctions    0
+  }
+  slprops.hdlmdlprops {
+    $PropName		    "HDLParams"
+    $ObjectID		    1
+    Array {
+      Type		      "Cell"
+      Dimension		      2
+      Cell		      "HDLSubsystem"
+      Cell		      "TestSFunctionLib"
+      PropName		      "mdlProps"
+    }
+  }
+  PreLoadFcn		  "modelParameters;"
+  PostLoadFcn		  ", if any(exist('dsrtsu_mdlpostloadfcn', 'file') == [2, 3, 6]), try dsrtsu_mdlpostloadfcn('Execute', "
+  "bdroot); catch fprintf('Error in PostLoadFcn (dsrtsu_mdlpostloadfcn) for model \"%s\":\\n %s\\n', bdroot, lasterr); "
+  "end, end, \n"
+  ScopeRefreshTime	  0.035000
+  OverrideScopeRefreshTime on
+  DisableAllScopes	  off
+  DataTypeOverride	  "UseLocalSettings"
+  DataTypeOverrideAppliesTo "AllNumericTypes"
+  MinMaxOverflowLogging	  "UseLocalSettings"
+  MinMaxOverflowArchiveMode "Overwrite"
+  FPTRunName		  "Run 1"
+  MaxMDLFileLineLength	  120
+  UserBdParams		  "DSRTSU_INTERNAL_RTI_VER;DSRTSU_INTERNAL_RTI_TYPE;RTICANMMDATA;DSRTSU_INTERNAL_DSETHERNET;DSRTSU_INT"
+  "ERNAL_DSETHERNETUDP;DSRTSU_INTERNAL_RTIFLEXRAYCONFIG;DSRTSU_INTERNAL_RTIFPGA"
+  LastSavedArchitecture	  "win64"
+  Object {
+    $PropName		    "BdWindowsInfo"
+    $ObjectID		    2
+    $ClassName		    "Simulink.BDWindowsInfo"
+    Object {
+      $PropName		      "WindowsInfo"
+      $ObjectID		      3
+      $ClassName	      "Simulink.WindowInfo"
+      IsActive		      [1]
+      Location		      [523.0, 273.0, 848.0, 533.0]
+      Object {
+	$PropName		"ModelBrowserInfo"
+	$ObjectID		4
+	$ClassName		"Simulink.ModelBrowserInfo"
+	Visible			[0]
+	DockPosition		"Left"
+	Width			[50]
+	Height			[50]
+	Filter			[9]
+      }
+      Object {
+	$PropName		"ExplorerBarInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.ExplorerBarInfo"
+	Visible			[1]
+      }
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		6
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[798.0, 358.0]
+	ZoomFactor		[1.0]
+	Offset			[-6.7500000000000568, 26.75]
+      }
+    }
+  }
+  DSRTSU_INTERNAL_RTI_VER "490"
+  DSRTSU_INTERNAL_RTI_TYPE "rti1401"
+  RTICANMMDATA		  "struct('GeneralSetupData',struct('modelroot','Z:\\Workspace\\TestSFunctionSimulinkLib','generalsett"
+  "ings',struct('filesettings',struct('destfolder',struct('Name','RTICANMM_FILES','Check',1),'buildfolder',struct('Name"
+  "','.','Check',1),'AbsDestfolder',struct('Name','Z:\\Workspace\\TestSFunctionSimulinkLib\\RTICANMM_FILES'),'AbsBuildf"
+  "older',struct('Name','Z:\\Workspace\\TestSFunctionSimulinkLib'))),'options',struct('addpaths',1,'rmpaths',1,'addtrce"
+  "xclusion',logical(1),'cannavigator',struct('checkmonitoring',0),'show_usrtrc',0,'use_usrtrc',0),'advanced',struct('o"
+  "ptions',[1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1"
+  " 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1]),'MPSetup',{{}},'model"
+  "name','TestSFunctionLib','block','TestSFunctionLib'))"
+  DSRTSU_INTERNAL_DSETHERNET "10"
+  DSRTSU_INTERNAL_DSETHERNETUDP	"10"
+  DSRTSU_INTERNAL_RTIFLEXRAYCONFIG "100"
+  DSRTSU_INTERNAL_RTIFPGA "80"
+  Created		  "Mon Sep 02 10:36:26 2019"
+  Creator		  "userinn"
+  UpdateHistory		  "UpdateHistoryNever"
+  ModifiedByFormat	  "%<Auto>"
+  LastModifiedBy	  "jossan"
+  ModifiedDateFormat	  "%<Auto>"
+  LastModifiedDate	  "Mon Jul 06 10:04:04 2020"
+  RTWModifiedTimeStamp	  515929935
+  ModelVersionFormat	  "1.%<AutoIncrement:51>"
+  ConfigurationManager	  "none"
+  SampleTimeColors	  off
+  SampleTimeAnnotations	  off
+  LibraryLinkDisplay	  "disabled"
+  WideLines		  off
+  ShowLineDimensions	  off
+  ShowPortDataTypes	  off
+  ShowEditTimeErrors	  on
+  ShowEditTimeWarnings	  off
+  ShowEditTimeAdvisorChecks off
+  ShowPortUnits		  off
+  ShowDesignRanges	  off
+  ShowLoopsOnError	  on
+  IgnoreBidirectionalLines off
+  ShowStorageClass	  off
+  ShowTestPointIcons	  on
+  ShowSignalResolutionIcons on
+  ShowViewerIcons	  on
+  SortedOrder		  off
+  VariantCondition	  off
+  ExecutionContextIcon	  off
+  ShowLinearizationAnnotations on
+  ShowVisualizeInsertedRTB on
+  ShowMarkup		  on
+  BlockNameDataTip	  off
+  BlockParametersDataTip  off
+  BlockDescriptionStringDataTip	off
+  ToolBar		  on
+  StatusBar		  on
+  BrowserShowLibraryLinks off
+  FunctionConnectors	  off
+  BrowserLookUnderMasks	  off
+  SimulationMode	  "normal"
+  PauseTimes		  "5"
+  NumberOfSteps		  1
+  SnapshotBufferSize	  10
+  SnapshotInterval	  10
+  NumberOfLastSnapshots	  0
+  LinearizationMsg	  "none"
+  Profile		  off
+  ParamWorkspaceSource	  "MATLABWorkspace"
+  AccelSystemTargetFile	  "accel.tlc"
+  AccelTemplateMakefile	  "accel_default_tmf"
+  AccelMakeCommand	  "make_rtw"
+  TryForcingSFcnDF	  off
+  Object {
+    $PropName		    "DataLoggingOverride"
+    $ObjectID		    7
+    $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
+    model_		    "TestSFunctionLib"
+    overrideMode_	    [0.0]
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      "TestSFunctionLib"
+      PropName		      "logAsSpecifiedByModels_"
+    }
+    Array {
+      Type		      "Cell"
+      Dimension		      1
+      Cell		      []
+      PropName		      "logAsSpecifiedByModelsSSIDs_"
+    }
+  }
+  ExtModeBatchMode	  off
+  ExtModeEnableFloating	  on
+  ExtModeTrigType	  "manual"
+  ExtModeTrigMode	  "normal"
+  ExtModeTrigPort	  "1"
+  ExtModeTrigElement	  "any"
+  ExtModeTrigDuration	  1000
+  ExtModeTrigDurationFloating "auto"
+  ExtModeTrigHoldOff	  0
+  ExtModeTrigDelay	  0
+  ExtModeTrigDirection	  "rising"
+  ExtModeTrigLevel	  0
+  ExtModeArchiveMode	  "off"
+  ExtModeAutoIncOneShot	  off
+  ExtModeIncDirWhenArm	  off
+  ExtModeAddSuffixToVar	  off
+  ExtModeWriteAllDataToWs off
+  ExtModeArmWhenConnect	  on
+  ExtModeSkipDownloadWhenConnect off
+  ExtModeLogAll		  on
+  ExtModeAutoUpdateStatusClock on
+  ShowModelReferenceBlockVersion off
+  ShowModelReferenceBlockIO off
+  Array {
+    Type		    "Handle"
+    Dimension		    1
+    Simulink.ConfigSetRef {
+      $ObjectID		      8
+      Version		      "1.16.2"
+      Name		      "Reference"
+      DDName		      ""
+      WSVarName		      "ConfigSet"
+      SourceLocation	      "Base Workspace"
+    }
+    PropName		    "ConfigurationSets"
+  }
+  Simulink.ConfigSetRef {
+    $PropName		    "ActiveConfigurationSet"
+    $ObjectID		    8
+  }
+  Object {
+    $PropName		    "DataTransfer"
+    $ObjectID		    9
+    $ClassName		    "Simulink.GlobalDataTransfer"
+    DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
+    DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
+    DefaultTransitionBetweenContTasks "Ensure deterministic transfer (minimum delay)"
+    DefaultExtrapolationMethodBetweenContTasks "None"
+    AutoInsertRateTranBlk   [0]
+  }
+  ExplicitPartitioning	  off
+  BlockDefaults {
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    NamePlacement	    "normal"
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    ShowName		    on
+    BlockRotation	    0
+    BlockMirror		    off
+  }
+  AnnotationDefaults {
+    HorizontalAlignment	    "center"
+    VerticalAlignment	    "middle"
+    ForegroundColor	    "black"
+    BackgroundColor	    "white"
+    DropShadow		    off
+    FontName		    "Arial"
+    FontSize		    10
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+    UseDisplayTextAsClickCallback off
+  }
+  LineDefaults {
+    FontName		    "Arial"
+    FontSize		    9
+    FontWeight		    "normal"
+    FontAngle		    "normal"
+  }
+  MaskDefaults {
+    SelfModifiable	    "off"
+    IconFrame		    "on"
+    IconOpaque		    "opaque"
+    RunInitForIconRedraw    "off"
+    IconRotate		    "none"
+    PortRotate		    "default"
+    IconUnits		    "autoscale"
+  }
+  MaskParameterDefaults {
+    Evaluate		    "on"
+    Tunable		    "on"
+    NeverSave		    "off"
+    Internal		    "off"
+    ReadOnly		    "off"
+    Enabled		    "on"
+    Visible		    "on"
+    ToolTip		    "on"
+  }
+  BlockParameterDefaults {
+    Block {
+      BlockType		      Constant
+      Value		      "1"
+      VectorParams1D	      on
+      SamplingMode	      "Sample based"
+      OutMin		      "[]"
+      OutMax		      "[]"
+      OutDataTypeStr	      "Inherit: Inherit from 'Constant value'"
+      LockScale		      off
+      SampleTime	      "inf"
+      FramePeriod	      "inf"
+      PreserveConstantTs      off
+    }
+    Block {
+      BlockType		      Display
+      Format		      "short"
+      Decimation	      "10"
+      Floating		      off
+      Lockdown		      off
+      SampleTime	      "-1"
+    }
+    Block {
+      BlockType		      S-Function
+      FunctionName	      "system"
+      SFunctionModules	      "''"
+      PortCounts	      "[]"
+    }
+    Block {
+      BlockType		      SubSystem
+      ShowPortLabels	      "FromPortIcon"
+      Permissions	      "ReadWrite"
+      PermitHierarchicalResolution "All"
+      TreatAsAtomicUnit	      off
+      MinAlgLoopOccurrences   off
+      PropExecContextOutsideSubsystem off
+      CheckFcnCallInpInsideContextMsg off
+      SystemSampleTime	      "-1"
+      RTWSystemCode	      "Auto"
+      RTWFcnNameOpts	      "Auto"
+      RTWFileNameOpts	      "Auto"
+      FunctionInterfaceSpec   "void_void"
+      FunctionWithSeparateData off
+      RTWMemSecFuncInitTerm   "Inherit from model"
+      RTWMemSecFuncExecute    "Inherit from model"
+      RTWMemSecDataConstants  "Inherit from model"
+      RTWMemSecDataInternal   "Inherit from model"
+      RTWMemSecDataParameters "Inherit from model"
+      SimViewingDevice	      off
+      DataTypeOverride	      "UseLocalSettings"
+      DataTypeOverrideAppliesTo	"AllNumericTypes"
+      MinMaxOverflowLogging   "UseLocalSettings"
+      Opaque		      off
+      MaskHideContents	      off
+      SFBlockType	      "NONE"
+      GeneratePreprocessorConditionals off
+      TreatAsGroupedWhenPropagatingVariantConditions on
+      ContentPreviewEnabled   off
+      IsWebBlock	      off
+    }
+    Block {
+      BlockType		      Terminator
+    }
+  }
+  System {
+    Name		    "TestSFunctionLib"
+    Location		    [523, 273, 1371, 806]
+    Open		    on
+    ModelBrowserVisibility  off
+    ModelBrowserWidth	    200
+    ScreenColor		    "white"
+    PaperOrientation	    "landscape"
+    PaperPositionMode	    "auto"
+    PaperType		    "usletter"
+    PaperUnits		    "inches"
+    TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
+    TiledPageScale	    1
+    ShowPageBoundaries	    off
+    ZoomFactor		    "100"
+    ReportName		    "simulink-default.rpt"
+    SIDHighWatermark	    "295"
+    Block {
+      BlockType		      Constant
+      Name		      "Constant"
+      SID		      "1"
+      Position		      [200, 160, 230, 190]
+      ZOrder		      7
+      Value		      "3"
+    }
+    Block {
+      BlockType		      Constant
+      Name		      "Constant1"
+      SID		      "2"
+      Position		      [200, 225, 230, 255]
+      ZOrder		      9
+      Value		      "2"
+    }
+    Block {
+      BlockType		      Display
+      Name		      "Display"
+      SID		      "213"
+      Ports		      [1]
+      Position		      [575, 225, 665, 255]
+      ZOrder		      13
+      Decimation	      "1"
+    }
+    Block {
+      BlockType		      SubSystem
+      Name		      "RTI Data"
+      SID		      "6"
+      Tag		      "struct('RTIDataServer',struct('RTIDataServerVs','2','RTIModelDescription','struct(''main'',''TestSFu"
+      "nctionLib'',''sub'','''',''isMp'',0)'))"
+      Ports		      []
+      Position		      [90, 65, 141, 77]
+      ZOrder		      11
+      ForegroundColor	      "gray"
+      BackgroundColor	      "[0.752941, 0.752941, 0.752941]"
+      DropShadow	      on
+      ShowName		      off
+      CopyFcn		      "if exist('rtidc'), try,  rtidc('DataHostBlockClbCopy', gcbh); catch, disp(['Warning: ''CopyFcn''"
+      " for RTI Data block failed: ' lasterr]); end, end, "
+      DeleteFcn		      "if exist('rtidc'), try,  rtidc('DataHostBlockClbDelete', gcbh); catch, disp(['Warning: ''Delet"
+      "eFcn'' for RTI Data block failed: ' lasterr]); end, end, "
+      LoadFcn		      "if exist('rtidc'), try,  rtidc('DataHostBlockClbLoad', gcbh); catch, disp(['Warning: ''LoadFcn''"
+      " for RTI Data block failed: ' lasterr]); end, end, "
+      ModelCloseFcn	      "if exist('rtidc'), try,  rtidc('DataHostBlockClbModelClose', gcbh); catch, disp(['Warning: "
+      "''ModelCloseFcn'' for RTI Data block failed: ' lasterr]); end, end, "
+      PreSaveFcn	      "if exist('rtidc'), try,  rtidc('DataHostBlockClbPreSave', gcbh); catch, disp(['Warning: ''PreS"
+      "aveFcn'' for RTI Data block failed: ' lasterr]); end, end, "
+      PostSaveFcn	      "if exist('rtidc'), try,  rtidc('DataHostBlockClbPostSave', gcbh); catch, disp(['Warning: ''Po"
+      "stSaveFcn'' for RTI Data block failed: ' lasterr]); end, end, "
+      NameChangeFcn	      "if exist('rtidc'), try,  rtidc('DataHostBlockClbNameChange', gcbh); catch, disp(['Warning: "
+      "''NameChangeFcn'' for RTI Data block failed: ' lasterr]); end, end, "
+      RequestExecContextInheritance off
+      Variant		      off
+      Object {
+	$PropName		"MaskObject"
+	$ObjectID		10
+	$ClassName		"Simulink.Mask"
+	Type			"RTI_DATA_HOST"
+	Description		"RTI Data Block.\nThis block is used by RTI to store internal model-dependent data.\nPlease keep this bl"
+	"ock on the root level of the model. Deleting this block will result in data loss.\n\nNEVER DELETE OR COPY THIS BLOCK!"
+	Help			"RTI Data Block.\nThis block is used by RTI to store internal model-dependent data.\nPlease keep this block on"
+	" the root level of the model. Deleting this block will result in data loss.\n\nNEVER DELETE OR COPY THIS BLOCK!"
+	Display			"text(0.5, 0.5, 'RTI Data', 'HorizontalAlignment', 'center');\nplot([1 0]);"
+	IconUnits		"normalized"
+      }
+      System {
+	Name			"RTI Data"
+	Location		[450, 250, 640, 300]
+	Open			off
+	ModelBrowserVisibility	off
+	ModelBrowserWidth	200
+	ScreenColor		"white"
+	PaperOrientation	"landscape"
+	PaperPositionMode	"auto"
+	PaperType		"A4"
+	PaperUnits		"centimeters"
+	TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+	TiledPageScale		1
+	ShowPageBoundaries	off
+	ZoomFactor		"100"
+	Block {
+	  BlockType		  SubSystem
+	  Name			  "RTI Data Store"
+	  SID			  "292"
+	  Tag			  "struct('private',struct('version',struct('dsVer',uint32(2),'dsVerCreation',uint32(2),'RTI',struct('ver','7"
+	  ".7','type','RTI1401')),'access',struct('type','Model','isPerm',1,'created',['02-Sep-2019 10:38:29'],'modified',['29"
+	  "-Jun-2020 17:45:26'],'location','')),'public',struct('main',struct('data',[]),'sub',struct('name',{{'TestSFunctionL"
+	  "ib'}},'data',{{struct('TH',struct('thTaskInfo',struct('taskType',{'TIMER','HWINT','TMRINT','SWINT','GLINT'},'tasksN"
+	  "umOf',{1,0,0,0,0},'srcIds',{{'TIMERA'},{},{},{},{}},'taskNames',{{['Timer Task 1']},{},{},{},{}})),'th_tc',struct('"
+	  "dataType','TASK','taskGroupId','','taskGroupList',{{}},'taskSchedulingPolicy','FCFS','taskType','TIMER','blkh',-1,'"
+	  "srcId','TIMERA','srcSgnName',['Timer A interrupt'],'srcCpuName','','taskName',['Timer Task 1  [1] s'],'taskNameDisp"
+	  "layExt','','smplTime',1,'smplTimeOffs',0,'hasFixedPriority',0,'priority',1,'hasFixedOvc',0,'ovcType',1,'ovcMax',1),"
+	  "'tc_th',struct('dataType','TASK','taskGroupId','','taskGroupList',{{}},'taskSchedulingPolicy','FCFS','taskType','TI"
+	  "MER','blkh',-1,'srcId','TIMERA','srcSgnName',['Timer A interrupt'],'srcCpuName','','taskName',['Timer Task 1  [1] s"
+	  "'],'taskNameDisplayExt','','smplTime',1,'smplTimeOffs',0,'hasFixedPriority',0,'priority',1,'hasFixedOvc',0,'ovcType"
+	  "',1,'ovcMax',1))}})))"
+	  Ports			  []
+	  Position		  [146, 12, 181, 25]
+	  ZOrder		  71
+	  ForegroundColor	  "white"
+	  ShowName		  off
+	  RequestExecContextInheritance	off
+	  Variant		  off
+	  Object {
+	    $PropName		    "MaskObject"
+	    $ObjectID		    11
+	    $ClassName		    "Simulink.Mask"
+	    Type		    "RTI_DATA_STORE"
+	    Description		    "RTI Data Store Block. This block is used by RTI to store internal model dependent data. Deletin"
+	    "g this block will result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+	    Help		    "RTI Data Store Block. This block is used by RTI to store internal model dependent data. Deleting this "
+	    "block will result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+	    Display		    "text(0.5, 0.5, ' ', 'HorizontalAlignment', 'center');"
+	    IconFrame		    "off"
+	    IconUnits		    "normalized"
+	  }
+	  System {
+	    Name		    "RTI Data Store"
+	    Location		    [450, 250, 640, 300]
+	    Open		    off
+	    ModelBrowserVisibility  off
+	    ModelBrowserWidth	    200
+	    ScreenColor		    "white"
+	    PaperOrientation	    "landscape"
+	    PaperPositionMode	    "auto"
+	    PaperType		    "A4"
+	    PaperUnits		    "centimeters"
+	    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+	    TiledPageScale	    1
+	    ShowPageBoundaries	    off
+	    ZoomFactor		    "100"
+	    Block {
+	      BlockType		      SubSystem
+	      Name		      "RTI Data Store"
+	      SID		      "293"
+	      Ports		      []
+	      Position		      [146, 12, 181, 25]
+	      ZOrder		      72
+	      ForegroundColor	      "white"
+	      ShowName		      off
+	      RequestExecContextInheritance off
+	      Variant		      off
+	      Object {
+		$PropName		"MaskObject"
+		$ObjectID		12
+		$ClassName		"Simulink.Mask"
+		Type			"RTI_DATA_STORE"
+		Description		"RTI Data Store Block. This block is used by RTI to store internal model dependent data. Deleting this "
+		"block will result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		Help			"RTI Data Store Block. This block is used by RTI to store internal model dependent data. Deleting this block "
+		"will result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		Display			"text(0.5, 0.5, ' ', 'HorizontalAlignment', 'center');"
+		IconFrame		"off"
+		IconUnits		"normalized"
+	      }
+	      System {
+		Name			"RTI Data Store"
+		Location		[450, 250, 640, 300]
+		Open			off
+		ModelBrowserVisibility	off
+		ModelBrowserWidth	200
+		ScreenColor		"white"
+		PaperOrientation	"landscape"
+		PaperPositionMode	"auto"
+		PaperType		"A4"
+		PaperUnits		"centimeters"
+		TiledPaperMargins	[1.270000, 1.270000, 1.270000, 1.270000]
+		TiledPageScale		1
+		ShowPageBoundaries	off
+		ZoomFactor		"100"
+		Block {
+		  BlockType		  SubSystem
+		  Name			  "RTI Data Store"
+		  SID			  "294"
+		  Ports			  []
+		  Position		  [146, 12, 181, 25]
+		  ZOrder		  73
+		  ForegroundColor	  "white"
+		  ShowName		  off
+		  RequestExecContextInheritance	off
+		  Variant		  off
+		  Object {
+		    $PropName		    "MaskObject"
+		    $ObjectID		    13
+		    $ClassName		    "Simulink.Mask"
+		    Type		    "RTI_DATA_STORE"
+		    Description		    "RTI Data Store Block. This block is used by RTI to store internal model dependent data. Deleti"
+		    "ng this block will result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		    Help		    "RTI Data Store Block. This block is used by RTI to store internal model dependent data. Deleting this"
+		    " block will result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		    Display		    "text(0.5, 0.5, ' ', 'HorizontalAlignment', 'center');"
+		    IconFrame		    "off"
+		    IconUnits		    "normalized"
+		  }
+		  System {
+		    Name		    "RTI Data Store"
+		    Location		    [450, 250, 640, 300]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    Block {
+		    BlockType		    SubSystem
+		    Name		    "RTI Data Store"
+		    SID			    "295"
+		    Ports		    []
+		    Position		    [146, 12, 181, 25]
+		    ZOrder		    74
+		    ForegroundColor	    "white"
+		    ShowName		    off
+		    RequestExecContextInheritance off
+		    Variant		    off
+		    Object {
+		    $PropName		    "MaskObject"
+		    $ObjectID		    14
+		    $ClassName		    "Simulink.Mask"
+		    Type		    "RTI_DATA_STORE"
+		    Description		    "RTI Data Store Block. This block is used by RTI to store internal model dependent data. Deleti"
+		    "ng this block will result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		    Help		    "RTI Data Store Block. This block is used by RTI to store internal model dependent data. Deleting this"
+		    " block will result in data loss.\n\nNEVER DELETE, COPY, OR MODIFY THIS BLOCK!"
+		    Display		    "text(0.5, 0.5, ' ', 'HorizontalAlignment', 'center');"
+		    IconFrame		    "off"
+		    IconUnits		    "normalized"
+		    }
+		    System {
+		    Name		    "RTI Data Store"
+		    Location		    [450, 250, 640, 300]
+		    Open		    off
+		    ModelBrowserVisibility  off
+		    ModelBrowserWidth	    200
+		    ScreenColor		    "white"
+		    PaperOrientation	    "landscape"
+		    PaperPositionMode	    "auto"
+		    PaperType		    "A4"
+		    PaperUnits		    "centimeters"
+		    TiledPaperMargins	    [1.270000, 1.270000, 1.270000, 1.270000]
+		    TiledPageScale	    1
+		    ShowPageBoundaries	    off
+		    ZoomFactor		    "100"
+		    }
+		    }
+		  }
+		}
+	      }
+	    }
+	  }
+	}
+      }
+    }
+    Block {
+      BlockType		      S-Function
+      Name		      "S-Function"
+      SID		      "4"
+      Ports		      [2, 2]
+      Position		      [320, 142, 475, 273]
+      ZOrder		      6
+      FunctionName	      "SfcnProcessFunction"
+      SFunctionDeploymentMode off
+      EnableBusSupport	      off
+    }
+    Block {
+      BlockType		      Terminator
+      Name		      "Terminator"
+      SID		      "214"
+      Position		      [585, 165, 605, 185]
+      ZOrder		      14
+    }
+    Line {
+      ZOrder		      3
+      SrcBlock		      "Constant"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      9
+      SrcBlock		      "Constant1"
+      SrcPort		      1
+      DstBlock		      "S-Function"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      14
+      SrcBlock		      "S-Function"
+      SrcPort		      2
+      DstBlock		      "Display"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      15
+      SrcBlock		      "S-Function"
+      SrcPort		      1
+      DstBlock		      "Terminator"
+      DstPort		      1
+    }
+  }
+}

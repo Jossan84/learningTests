@@ -1,0 +1,3 @@
+Z:/Workspace/TestCMakeLibraries/mingw/lib/libsumDouble.a
+Z:/Workspace/TestCMakeLibraries/mingw/bin/testCMakeLibraries.exe
+Z:/Workspace/TestCMakeLibraries/mingw/include/sumDouble.h

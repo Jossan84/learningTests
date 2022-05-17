@@ -1,0 +1,23 @@
+
+*** Comands to generate a library with CMake.
+Configure and Generate Project
+- Windows [MinGW]
+ $ cmake .. -G "MinGW Makefiles"
+ 
+- Linux [GCC]
+ $ cmake .. -G "Unix Makefiles" 
+
+- dSPACE 
+ $ cmake .. -D CMAKE_TOOLCHAIN_FILE=../cmake/Toolchain-dSPACE.cmake -G "Unix Makefiles" -D CMAKE_MAKE_PROGRAM="C:\dSPACE\dSPACE RCPHIL 2016-B\Exe\DSMAKE.EXE"
+	>> Note: Run command from Command Prompt for dSPACE
+ 
+ 
+Build Project
+ $ cmake --build .
+ $ cmake --build . --target install
+
+
+Notes: 
+		- Run commands from build folder
+		- License is required to build for dSPACE	
+		- Maybe not work in wmware shared folder

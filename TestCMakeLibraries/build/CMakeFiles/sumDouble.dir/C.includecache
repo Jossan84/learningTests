@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/sumDouble.h
+
+Z:/Workspace/TestCMakeLibraries/src/sumDouble.c
+sumDouble.h
+Z:/Workspace/TestCMakeLibraries/src/sumDouble.h
+

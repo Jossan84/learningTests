@@ -1,0 +1,105 @@
+-- ******** Model variables ***************************************************
+
+group "Model Root"
+	group "Constant" -- block-group
+	{
+	 block: "Constant"
+	}
+		-- Skipping output Out1
+		p_1_TestSFunctionLib_real_T_0[0]
+		{
+		 type:    TestSFunctionLib_ArrayDT0_2*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant"
+
+	group "Constant1" -- block-group
+	{
+	 block: "Constant"
+	}
+		-- Skipping output Out1
+		p_1_TestSFunctionLib_real_T_0[2]
+		{
+		 type:    TestSFunctionLib_ArrayDT0_2*
+		 alias:   "Value"
+		 flags:   PARAM
+		}
+
+
+	endgroup -- block-group "Constant1"
+
+	group "Display" -- block-group
+	{
+	 block: "Display"
+	}
+		p_0_TestSFunctionLib_real_T_0[0]
+		{
+		 type:    TestSFunctionLib_ArrayDT0_2*
+		 alias:   "In1"
+		 flags:   READONLY
+		}
+
+
+
+	endgroup -- block-group "Display"
+
+	group "S-Function" -- block-group
+	{
+	 block: "S-Function"
+	}
+		p_0_TestSFunctionLib_real_T_0[0]
+		{
+		 type:    TestSFunctionLib_ArrayDT0_2*
+		 alias:   "Out1"
+		 flags:   OUTPUT|READONLY
+		}
+		p_0_TestSFunctionLib_real_T_0[2]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "Out2"
+		 flags:   OUTPUT|READONLY
+		}
+
+
+	endgroup -- block-group "S-Function"
+
+	group "Scope" -- block-group
+	{
+	 block: "Scope"
+	}
+
+		-- Skipping inport In1
+
+
+		-- Skipping inport In2
+
+		p_0_TestSFunctionLib_real_T_0[0]
+		{
+		 type:    TestSFunctionLib_ArrayDT0_2*
+		 alias:   "In3"
+		 flags:   READONLY
+		}
+		p_0_TestSFunctionLib_real_T_0[2]
+		{
+		 type:    flt(64,IEEE)*
+		 alias:   "In4"
+		 flags:   READONLY
+		}
+
+
+
+	endgroup -- block-group "Scope"
+
+  
+  
+	group "RTI Data" -- subsystem-group
+
+
+	endgroup -- subsystem-group "RTI Data"
+
+
+
+endgroup -- "Model Root"

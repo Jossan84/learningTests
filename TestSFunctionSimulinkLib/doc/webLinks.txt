@@ -1,0 +1,7 @@
+
+https://www.mathworks.com/help/rtw/ug/use-rtwmakecfg-m-api-to-customize-generated-makefiles.html
+https://itectec.com/matlab/matlab-how-to-insert-the-code-at-the-top-of-the-main-header-file-for-an-autosar-target/
+https://www.mathworks.com/help/rtw/ug/customizing-post-code-generation-build-processing.html
+https://www.mathworks.com/help/rtw/ref/addcompileflags.html
+https://www.mathworks.com/help/ecoder/ref/addlinkflags.html%20addLink
+https://www.mathworks.com/help/rtw/build-process-customization.html

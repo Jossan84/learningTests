@@ -1,0 +1,4 @@
+
+https://github.com/acados/acados
+https://itectec.com/matlab/matlab-simulink-library-linking-error/
+https://cmake.org/
